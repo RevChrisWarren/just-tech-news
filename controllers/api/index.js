@@ -6,6 +6,8 @@ const postRoutes = require('./post-routes.js');
 
 const commentRoutes = require('./comment-routes.js');
 
+const withAuth = require('../../utils/auth');
+
 
 router.use('/users', userRoutes);
 router.use('/posts', postRoutes);
